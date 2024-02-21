@@ -12,19 +12,25 @@
         <header>
             <h1>Достопримечательности <br>Курганской облости</h1>
             <div>
-                <p>
-                    Привет, я Царевна Лягушка,<br>
-                    буду твоим путиводителем<br>
-                    по этому сайту. Давай <br>
-                    узнаем какие достопримечательности<br> 
-                    есть в Курганской обасти.
-                </p>
+                <p id="sample_typeit"></p>
                 <img src="/assets/assistant.png" alt="assistant">
             </div>
         </header>
     </div>
     <!-- JS -->
     <script src="/js/main.js"></script>
+    <script src="/js/typeit.min.js"></script>
+    <script>
+        new TypeIt("#sample_typeit", {
+            strings: [
+                "Привет, я Царевна Лягушка, ",
+                "буду твоим путиводителем по этому сайту.",
+                "Давай узнаем какие достопримечательности",
+                "есть в Курганской обасти."
+            ],
+            speed: 25,
+        }).go();
+    </script>
 </body>
 
 </html>
