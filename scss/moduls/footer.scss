@@ -1,0 +1,19 @@
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.1); 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 10px #0062ff; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+   -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  }
