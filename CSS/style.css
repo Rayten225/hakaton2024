@@ -14,8 +14,7 @@ body{
 /* header */
 header{
     background: url(../assets/header.png);
-    height: 98vh;
-    /* background-size: cover; */
+    height:100vh;
     display:flex;
     padding-left: 40px;
     padding-top: 40px;
