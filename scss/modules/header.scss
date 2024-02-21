@@ -33,4 +33,26 @@ header{
   background-color: #000;
   color:#fff;
   height: 80px;
+
+  .container .wraper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 80px;
+
+    nav ul{
+      display: flex;
+      gap: 100px;
+
+      li a{
+        color: #fff;
+        font-size: 20px;
+
+        &:hover{
+          border-bottom: 1px solid  #fff;
+        }
+      }
+    }
+  }
 }

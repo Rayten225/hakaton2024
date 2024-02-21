@@ -41,6 +41,32 @@ header {
   color: #fff;
   height: 80px;
 }
+header .container .wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+header .container .wraper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+}
+header .container .wraper nav ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+header .container .wraper nav ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
 
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -78,6 +104,7 @@ main .main__start .container .wraper {
           justify-content: space-between;
   width: 100%;
   height: 1000px;
+  margin-bottom: 200px;
 }
 main .main__start .container .wraper article {
   -ms-flex-item-align: center;
@@ -127,6 +154,85 @@ main .main__start .container .wraper .dialog_window.close_dialogWindow {
 }
 main .main__start .container .wraper .dialog_window.open_dialogWindow {
   display: block;
+}
+main .main__goroda .container .wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 1000px;
+}
+main .main__goroda .container .wraper .main__goroda-left,
+main .main__goroda .container .wraper .main__goroda-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .main__goroda .container .wraper .main__goroda-left a,
+main .main__goroda .container .wraper .main__goroda-right a {
+  width: 380px;
+  height: 390px;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 45px;
+  -webkit-box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+main .main__goroda .container .wraper .main__goroda-left a h2,
+main .main__goroda .container .wraper .main__goroda-right a h2 {
+  color: #fff;
+  font-size: 40px;
+}
+main .main__goroda .container .wraper .main__goroda-left a:hover,
+main .main__goroda .container .wraper .main__goroda-right a:hover {
+  -webkit-box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+}
+main .main__goroda .container .wraper .main__goroda-left a img,
+main .main__goroda .container .wraper .main__goroda-right a img {
+  width: 200px;
+  height: 265px;
+  background-size: cover;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+main .main__goroda .container .wraper .main__goroda-right a:nth-child(1) span {
+  width: 200px;
+  height: 265px;
+  background-size: cover;
+  background-image: url("/assets/kurgan.png");
+  background-position: center top;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
 .btn-up {
