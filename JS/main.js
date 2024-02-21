@@ -1,3 +1,4 @@
+//  button to top
 const btnUp = {
     el: document.querySelector('.btn-up'),
     show() {
@@ -9,7 +10,7 @@ const btnUp = {
     addEventListener() {
       window.addEventListener('scroll', () => {
         const scrollY = window.scrollY || document.documentElement.scrollTop;
-        scrollY > 100 ? this.show() : this.hide();
+        scrollY > 50 ? this.show() : this.hide();
       });
       document.querySelector('.btn-up').onclick = () => {
         window.scrollTo({

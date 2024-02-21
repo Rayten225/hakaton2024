@@ -2,6 +2,9 @@
     font-family: und;
     src: url("/fons/Undertale-Battle-Font.ttf");
 }
+html{
+  scroll-behavior: smooth;
+}
 *{
   margin: 0;
   padding: 0;
@@ -23,16 +26,11 @@ body{
 .container{
   width: 1720px;
   display: flex;
-  margin: 15px auto;
+  margin: 0 auto;
 }
 /* header */
 header{
   background-color: #000;
   color:#fff;
   height: 80px;
-  margin-bottom: 40px;
-
-  .container{
-    margin: 0 auto;
-  }
 }
