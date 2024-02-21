@@ -111,11 +111,3 @@ header div p {
 ::-webkit-scrollbar-thumb:hover {
   -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-main .main__img {
-  background-image: url("/assets/main.png");
-  background-position: center top;
-  background-size: 1890px;
-  width: 100vw;
-  height: 3008px;
-}
