@@ -9,6 +9,7 @@ body{
     background-color: #000c1f;
     font-family: "Arimo", sans-serif;
     font-weight: 400;
+    overflow-x: hidden
 }
 
 /* header */
@@ -37,6 +38,15 @@ header div{
 }
 header div img{
   width: 350px;
+  animation: img_header_animate 2s infinite;
+}
+@keyframes img_header_animate{
+  0%, 100%{
+    transform: translate(-2%, 2%);
+  }
+  50%{
+    transform: translate(-2%, -2%);
+  }
 }
 header div p{
   background-color: rgba(0,0,0,.7);
