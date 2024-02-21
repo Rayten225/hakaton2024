@@ -164,6 +164,7 @@ main .main__goroda .container .wraper {
           justify-content: space-between;
   width: 100%;
   height: 1000px;
+  margin-bottom: 200px;
 }
 main .main__goroda .container .wraper .main__goroda-left,
 main .main__goroda .container .wraper .main__goroda-right {
@@ -184,7 +185,7 @@ main .main__goroda .container .wraper .main__goroda-left a,
 main .main__goroda .container .wraper .main__goroda-right a {
   width: 380px;
   height: 390px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   display: -webkit-box;
