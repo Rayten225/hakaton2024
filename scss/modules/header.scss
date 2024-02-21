@@ -7,9 +7,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  overflow-x: hidden;
-}
 body{
     background-color: #000c1f;
     font-family: und;
@@ -47,6 +44,7 @@ header{
 
         img{
           width: 350px;
+          margin-right: 50px;
           animation: img_header_animate 2s infinite ease-in-out;
         }
         p{
