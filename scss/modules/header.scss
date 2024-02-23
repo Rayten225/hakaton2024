@@ -1,6 +1,6 @@
 @font-face {
     font-family: und;
-    src: url("/fons/Undertale-Battle-Font.ttf");
+    src: url("../fons/Undertale-Battle-Font.ttf");
 }
 html{
   scroll-behavior: smooth;
@@ -24,7 +24,7 @@ body{
     }
 }
 .container{
-  width: 1720px;
+  max-width: 1720px;
   display: flex;
   margin: 0 auto;
 }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: und;
-  src: url("/fons/Undertale-Battle-Font.ttf");
+  src: url("../fons/Undertale-Battle-Font.ttf");
 }
 html {
   scroll-behavior: smooth;
@@ -28,7 +28,7 @@ body li {
 }
 
 .container {
-  width: 1720px;
+  max-width: 1720px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,6 +118,87 @@ footer .footer__left-navigation nav ul {
 }
 footer .footer__left-text h2 {
   color: #fff;
+}
+footer .footer__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 100px;
+}
+footer .footer__center a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+footer .footer__center a img {
+  background-color: #000;
+  border-radius: 50%;
+}
+footer .footer__center a h3 {
+  color: #fff;
+}
+footer .footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .footer__right-navigationIakor ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+footer .footer__right-navigationIakor ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+footer .footer__right-navigationIakor ul li a:hover {
+  border-bottom: 1px solid #ccc;
+}
+footer .footer__right-navigationStran ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+footer .footer__right-navigationStran ul li:nth-child(1) a {
+  color: #fff;
+}
+footer .footer__right-navigationStran ul li a {
+  color: #ccc;
+  font-size: 20px;
 }
 
 /* scrollbar */

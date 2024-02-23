@@ -32,6 +32,66 @@ footer .footer{
       color: #fff;
     }
   }
+  &__center{
+    display: flex;
+    align-items: flex-end ;
+    padding-bottom: 100px;
+
+    a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap:10px;
+
+      img{
+        background-color: #000;
+        border-radius: 50%;
+      }
+      h3{
+        color: #fff;
+      }
+    }
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+    gap:250px;
+    justify-content: center;
+
+    &-navigationIakor{
+      ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+
+        li a{
+          color: #fff;
+          font-size: 20px;
+
+          &:hover{
+            border-bottom: 1px solid #ccc;
+          }
+        }
+      }
+    }
+    &-navigationStran{
+      ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+
+        li:nth-child(1) a{
+          color: #fff;
+        }
+        li a{
+          color: #ccc;
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
 
 /* scrollbar */
