@@ -68,6 +68,7 @@ header .container .wraper nav ul li a:hover {
   border-bottom: 1px solid #fff;
 }
 
+/* footer */
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 13px;
@@ -131,6 +132,7 @@ main .main__start .container .wraper .dialog_window {
           justify-content: space-between;
 }
 main .main__start .container .wraper .dialog_window img {
+  margin-right: -100px;
   width: 350px;
   -webkit-animation: img_header_animate 2s infinite ease-in-out;
           animation: img_header_animate 2s infinite ease-in-out;
@@ -148,12 +150,6 @@ main .main__start .container .wraper .dialog_window p {
   white-space: pre-wrap;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-}
-main .main__start .container .wraper .dialog_window.close_dialogWindow {
-  display: none;
-}
-main .main__start .container .wraper .dialog_window.open_dialogWindow {
-  display: block;
 }
 main .main__goroda .container .wraper {
   display: -webkit-box;
@@ -235,6 +231,30 @@ main .main__goroda .container .wraper .main__goroda-right a:nth-child(1) span {
   -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
+main .main__map {
+  margin-bottom: 200px;
+}
+main .main__map .container .wraper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+main .main__map .container .wraper h1 {
+  color: #fff;
+  font-size: 45px;
+}
 
 .btn-up {
   position: fixed;
@@ -285,21 +305,5 @@ main .main__goroda .container .wraper .main__goroda-right a:nth-child(1) span {
   50% {
     -webkit-transform: translate(-2%, -2%);
             transform: translate(-2%, -2%);
-  }
-}
-@-webkit-keyframes poiv {
-  to {
-    opacity: 0;
-  }
-  from {
-    opacity: 1;
-  }
-}
-@keyframes poiv {
-  to {
-    opacity: 0;
-  }
-  from {
-    opacity: 1;
   }
 }
