@@ -1,5 +1,38 @@
 /* footer */
+footer .footer{
+  display: flex;
+  justify-content: space-around;
+  height:817px;
 
+  &__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &-navigation{
+      gap:20px;
+      display: flex;
+      flex-direction: column;
+
+      nav{
+        display: flex;
+        gap:20px;
+        align-items: center;
+
+        h2{
+          color: #fff;
+        }
+        ul{
+          display: flex;
+          gap:10px;
+        }
+      }
+    }
+    &-text h2{
+      color: #fff;
+    }
+  }
+}
 
 /* scrollbar */
 ::-webkit-scrollbar {
