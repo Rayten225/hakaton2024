@@ -220,3 +220,46 @@ footer .footer__right-navigationStran ul li a {
 ::-webkit-scrollbar-thumb:hover {
   -webkit-box-shadow: inset 0 0 10px #0051d3;
 }
+
+.wraper {
+  background-image: url("/assets/");
+}
+
+main .main__h {
+  margin-bottom: 500px;
+  width: 100%;
+  padding-top: 100px;
+}
+main .main__h h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+}
+main .main__pams .container .main__pam {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  color: #fff;
+}
+main .main__pams .container .main__pam div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+main .main__pams .container .main__pam div h1 {
+  font-size: 60px;
+}
+main .main__pams .container .main__pam div p {
+  font-size: 28px;
+  max-width: 945px;
+}

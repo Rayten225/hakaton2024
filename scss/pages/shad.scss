@@ -1,3 +1,42 @@
 @import "../modules/header.scss";
 @import "../modules/footer.scss";
 
+.wraper{
+    background-image: url("/assets/");
+}
+main{
+    .main__h{
+        margin-bottom: 500px;
+        width: 100%;
+        padding-top: 100px;
+
+        h1{
+            color: #fff;
+            text-align: center;
+            font-size: 60px;
+        }
+    }
+    .main__pams .container{
+        .main__pam{
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            gap: 40px;
+            color:#fff;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                gap:40px;
+
+                h1{
+                    font-size: 60px;
+                }
+                p{
+                    font-size: 28px;
+                    max-width: 945px;
+                }
+            }
+        }
+    }
+}
