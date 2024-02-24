@@ -219,6 +219,10 @@ main .main__goroda .wraper {
   padding-inline: 60px;
   height: 900px;
 }
+main .main__goroda .wraper .main__goroda-left {
+  position: relative;
+  z-index: 36;
+}
 main .main__goroda .wraper .main__goroda-left,
 main .main__goroda .wraper .main__goroda-right {
   display: -webkit-box;
@@ -313,13 +317,9 @@ main .main__map .wraper h1 {
   color: #fff;
   font-size: 45px;
 }
-main .main__map .wraper span {
-  display: block;
+main .main__map .wraper div {
   width: 1500px;
   height: 740px;
-  background-image: url("/assets/imge_map.svg");
-  background-size: cover;
-  background-position: center center;
 }
 
 .btn-up {
@@ -375,7 +375,7 @@ main .main__map .wraper span {
   }
 }
 @media screen and (max-width: 1515px) {
-  main .main__map .wraper span {
+  main .main__map .wraper div {
     width: 730px;
     height: 743px;
     -webkit-transition: 0.2s;

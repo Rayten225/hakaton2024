@@ -75,6 +75,10 @@ main{
             padding-inline: 60px;
             height: 900px;
 
+            .main__goroda-left{
+                position: relative;
+                z-index: 36;
+            }
             .main__goroda-left,
             .main__goroda-right{
                 display: flex;
@@ -140,13 +144,9 @@ main{
                 color:#fff;
                 font-size: 45px;
             }
-            span{
-                display: block;
+            div{
                 width: 1500px;
                 height:740px;
-                background-image: url("/assets/imge_map.svg");
-                background-size: cover;
-                background-position: center center;
             }
         }
     }
@@ -188,7 +188,7 @@ main{
 }
 @media screen and (max-width:1515px){
     main .main__map{
-        .wraper span{
+        .wraper div{
             width: 730px;
             height:743px;
             transition: .2s;

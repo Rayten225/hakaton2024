@@ -5,6 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Достопримечательности Курганской облости</title>
+
+    <script src="https://api-maps.yandex.ru/v3/?apikey=a3685c22-7357-4e33-bab2-a063ecb55731&lang=ru_RU"></script>
+    <script>
+
+document.getElementById('map'),
+        initMap();
+
+        async function initMap() {
+            await ymaps3.ready;
+
+            const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+
+            const map = new YMap(document.getElementById('map'), {
+            location: {center: [65.12187, 55.44832], zoom: 7},
+            mode: 'vector'
+            });
+
+            const layer = new YMapDefaultSchemeLayer({
+            customization: [
+                // Делаем прозрачными все геометрии водных объектов.
+                {
+                tags: {
+                    all: ['water']
+                },
+                elements: 'geometry',
+                stylers: [
+                    {
+                    opacity: 0
+                    }
+                ]
+                },
+                // Меняем цвет подписей для всех POI и узлов сети общественного транспорта.
+                {
+                tags: {
+                    any: ['poi', 'transit_location']
+                },
+                elements: 'label.text.fill',
+                stylers: [
+                    {
+                    color: '#0000DD'
+                    }
+                ]
+                }
+            ]
+            });
+            map.addChild(layer);
+        }
+    </script>
 </head>
 <body>
     <!-- wraper -->
@@ -21,7 +69,7 @@
                                 <a href="#sity">Города</a>
                             </li>
                             <li>
-                                <a href="#map">Карта</a>
+                                <a href="#map_block">Карта</a>
                             </li>
                             <li>
                                 <a href="#footer">Контакты</a>
@@ -73,10 +121,10 @@
                 </div>
             </section>
             <!-- map -->
-            <section class="main__map" id="map">
+            <section class="main__map" id="map_block">
                 <div class="wraper">
                     <h1>Карта городов</h1>
-                    <span></span>                              
+                    <div id="map"></div>                             
                 </div>
             </section>
         </main>
