@@ -126,32 +126,36 @@ footer section a p {
   -webkit-box-shadow: inset 0 0 10px #0051d3;
 }
 
-.wraper {
-  background-image: url("/assets/");
+main header {
+  background-image: url("/assets/main_header_pages.svg");
+  background-size: cover;
+  background-position: top center;
+  padding-top: 60px;
+  height: 860px;
 }
-
-main .main__h {
-  margin-bottom: 500px;
-  width: 100%;
-  padding-top: 100px;
-}
-main .main__h h1 {
-  color: #fff;
-  text-align: center;
+main header h1 {
   font-size: 60px;
+  text-align: center;
 }
-main .main__pams .container .main__pam {
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+main .main__dos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 100px;
+  padding-block: 100px;
+  padding-inline: 100px;
+}
+main .main__dos .dos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
-  color: #fff;
 }
-main .main__pams .container .main__pam div {
+main .main__dos .dos div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,11 +164,23 @@ main .main__pams .container .main__pam div {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-main .main__pams .container .main__pam div h1 {
+main .main__dos .dos div h2 {
+  color: #fff;
   font-size: 60px;
 }
-main .main__pams .container .main__pam div p {
+main .main__dos .dos div p {
+  color: #fff;
   font-size: 28px;
-  max-width: 945px;
+  line-height: 40px;
+}
+main .main__dos .dos2,
+main .main__dos .dos4 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
