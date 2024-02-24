@@ -62,66 +62,22 @@ header .wraper nav ul li a:hover {
 }
 
 /* footer */
-footer .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+footer {
+  background-image: url("/assets/footer.svg");
+  background-position: top center;
+  background-size: cover;
   height: 820px;
-}
-footer .footer__left {
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-footer .footer__left-navigation {
-  gap: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-footer .footer__left-navigation nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-footer .footer__left-navigation nav h2 {
-  color: #fff;
-}
-footer .footer__left-navigation nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
-footer .footer__left-text h2 {
-  color: #fff;
-}
-footer .footer__center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-bottom: 100px;
 }
-footer .footer__center a {
+footer section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,69 +85,26 @@ footer .footer__center a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
-footer .footer__center a img {
-  background-color: #000;
-  border-radius: 50%;
-}
-footer .footer__center a h3 {
+footer section h1 {
+  font-size: 30px;
   color: #fff;
 }
-footer .footer__right {
+footer section a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 250px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-footer .footer__right-navigationIakor ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 10px;
+  z-index: 26;
+  position: relative;
 }
-footer .footer__right-navigationIakor ul li a {
+footer section a p {
   color: #fff;
-  font-size: 20px;
-}
-footer .footer__right-navigationIakor ul li a:hover {
-  border-bottom: 1px solid #ccc;
-}
-footer .footer__right-navigationStran ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-}
-footer .footer__right-navigationStran ul li:nth-child(1) a {
-  color: #fff;
-}
-footer .footer__right-navigationStran ul li a {
-  color: #ccc;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 /* scrollbar */
@@ -215,6 +128,43 @@ footer .footer__right-navigationStran ul li a {
   -webkit-box-shadow: inset 0 0 10px #0051d3;
 }
 
+.dialog_window {
+  -ms-flex-item-align: end;
+  position: sticky;
+  margin-top: 20px;
+  top: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 25;
+}
+.dialog_window img {
+  width: 350px;
+  height: 350px;
+  -webkit-animation: img_header_animate 2s infinite ease-in-out;
+          animation: img_header_animate 2s infinite ease-in-out;
+}
+.dialog_window p {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 30px 30px 0px 30px;
+  width: 450px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  line-height: 30px;
+  white-space: pre-wrap;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+main {
+  margin-top: -370px;
+}
 main .main__start .wraper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,35 +189,6 @@ main .main__start .wraper article h1 {
   border-radius: 30px;
   font-size: 54px;
   font-weight: 700;
-}
-main .main__start .wraper .dialog_window {
-  right: 0;
-  bottom: 20px;
-  -ms-flex-item-align: end;
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 25;
-}
-main .main__start .wraper .dialog_window img {
-  width: 350px;
-  -webkit-animation: img_header_animate 2s infinite ease-in-out;
-          animation: img_header_animate 2s infinite ease-in-out;
-}
-main .main__start .wraper .dialog_window p {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 20px;
-  font-size: 20px;
-  border-radius: 30px 30px 0px 30px;
-  width: 450px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  line-height: 30px;
-  white-space: pre-wrap;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
 }
 main .main__goroda {
   display: -webkit-box;
@@ -368,6 +289,10 @@ main .main__goroda .wraper .main__goroda-right a:nth-child(1) span {
   -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
+main .main__map {
+  background-image: url("/assets/map.svg");
+  padding-block: 60px;
+}
 main .main__map .wraper {
   width: 100%;
   display: -webkit-box;
@@ -388,6 +313,14 @@ main .main__map .wraper {
 main .main__map .wraper h1 {
   color: #fff;
   font-size: 45px;
+}
+main .main__map .wraper span {
+  display: block;
+  width: 1500px;
+  height: 740px;
+  background-image: url("/assets/imge_map.svg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .btn-up {
