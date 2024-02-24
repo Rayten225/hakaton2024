@@ -23,23 +23,19 @@ body{
       list-style: none;
     }
 }
-.container{
-  max-width: 1720px;
-  display: flex;
-  margin: 0 auto;
-}
 /* header */
 header{
   background-color: #000;
   color:#fff;
   height: 80px;
 
-  .container .wraper{
+   .wraper{
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     height: 80px;
+    padding-inline: 40px;
 
     nav ul{
       display: flex;
