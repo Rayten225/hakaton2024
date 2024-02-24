@@ -18,7 +18,6 @@ body {
   background-color: #000c1f;
   font-family: und;
   font-weight: 400;
-  overflow-x: hidden;
 }
 body a {
   text-decoration: none;
@@ -373,5 +372,30 @@ main .main__map .wraper span {
   50% {
     -webkit-transform: translate(-2%, -2%);
             transform: translate(-2%, -2%);
+  }
+}
+@media screen and (max-width: 1515px) {
+  main .main__map .wraper span {
+    width: 730px;
+    height: 743px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+}
+@media screen and (max-width: 1120px) {
+  main .main__goroda {
+    gap: 20px;
+  }
+  main .main__goroda h1 {
+    text-wrap: wrap;
+    margin-top: -60px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+}
+@media screen and (max-width: 910px) {
+  main .main__goroda .wraper .main__goroda-left a,
+  main .main__goroda .wraper .main__goroda-right a {
+    width: 300px;
   }
 }
