@@ -184,3 +184,36 @@ main .main__dos .dos4 {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+
+@media (max-width: 1550px) {
+  main .main__dos {
+    gap: 80px;
+  }
+  main .main__dos .dos p {
+    font-size: 20px !important;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  main .main__dos .dos h2 {
+    font-size: 50px !important;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+}
+@media screen and (max-width: 1370px) {
+  main .main__dos .dos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .main__dos .dos img {
+    width: 80%;
+  }
+  main .main__dos .dos div h2 {
+    text-align: center;
+  }
+}
