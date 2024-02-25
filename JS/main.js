@@ -21,4 +21,4 @@ const btnUp = {
       }
     }
   }
-btnUp.addEventListener();
+btnUp.addEventListener(); 
