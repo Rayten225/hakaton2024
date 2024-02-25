@@ -14,12 +14,20 @@ main{
             text-align: center;
         }
     }
+    .main__img{
+        background-image: url("/assets/fon_in_pages.svg");
+        height:800px;
+        width: 100%;
+        background-size: cover;
+        background-position: center top;
+    }
     .main__dos{
         display: flex;
         flex-direction: column;
         gap:100px;
         padding-block: 100px;
         padding-inline: 100px;
+        background-image: url("/assets/fon_main_pages1.svg");
 
         .dos{
             display: flex;
@@ -71,7 +79,7 @@ main{
             align-items: center;
 
             img{
-                width: 80%;
+                width: 50%;
             }
             div h2{
                 text-align: center;

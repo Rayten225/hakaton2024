@@ -137,6 +137,13 @@ main header h1 {
   font-size: 60px;
   text-align: center;
 }
+main .main__img {
+  background-image: url("/assets/fon_in_pages.svg");
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  background-position: center top;
+}
 main .main__dos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,6 +155,7 @@ main .main__dos {
   gap: 100px;
   padding-block: 100px;
   padding-inline: 100px;
+  background-image: url("/assets/fon_main_pages1.svg");
 }
 main .main__dos .dos {
   display: -webkit-box;
@@ -211,7 +219,7 @@ main .main__dos .dos4 {
             align-items: center;
   }
   main .main__dos .dos img {
-    width: 80%;
+    width: 50%;
   }
   main .main__dos .dos div h2 {
     text-align: center;
