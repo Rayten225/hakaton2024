@@ -225,3 +225,8 @@ main .main__dos .dos4 {
     text-align: center;
   }
 }
+@media screen and (max-width: 1000px) {
+  main .main__dos .dos img {
+    width: 80%;
+  }
+}
